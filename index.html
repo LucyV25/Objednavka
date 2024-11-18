@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="reg_form">
+        <label for="cardNumber">Platební karta:</label>
+        <input type="text" id="cardNumber" maxlength="16" required>
+        <p id="errorMessage" style="color: red;"></p>
+        <select id="doprava" required>
+            <option value="pobocka">Vyzvednout na pobočce</option>
+            <option value="zasilkovna">Zásilkovna</option>
+            <option value="posta">Česká pošta</option>
+            <option value="ppl">PPL</option>
+        </select>
+        <button type="submit">Odeslat objednávku</button>
+    </form>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</body>
+</html>
